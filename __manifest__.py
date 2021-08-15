@@ -8,7 +8,7 @@
     'complexity': 'easy',
     'Summary': 'A Module For School Management',
     'images': ['static/description/icon.png'],
-    'depends': ['base'],
+    'depends': ['base','partner_contact_birthdate','partner_contact_gender'],
     'data': ['security/security.xml',
              'security/ir.model.access.csv',
              'views/school_view.xml',
