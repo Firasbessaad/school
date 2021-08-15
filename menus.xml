@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menu Item Of EMS -->
+    <menuitem id="menu_root_school" name="School Managment" web_icon="school,static/description/icon.png" sequence="1"/>
+    <!-- Menu Item Of Students & Parents -->
+    <menuitem id="menu_students_parents" name="Students &amp; Parents" parent="menu_root_school" sequence="0"/>
+    <menuitem id="menu_student_profile" name="Students" parent="menu_students_parents" action="action_studens" 
+        sequence="0"/>
+    <menuitem id="menu_parent_profile" name="Parents" parent="menu_students_parents" action="action_parents" 
+        sequence="1"/>
+    <!-- MenuItem For Configurations -->
+    <menuitem id="menu_configuration" name="Configurations" parent="menu_root_school" sequence="99" groups="group_school_administration"/>
+    <!-- MenuItem For Configurations->Academic Years -->
+    <menuitem id="menu_academic_year_form" name="Academic Years" parent="menu_configuration" />
+    <menuitem id="menu_academic_year_sub_form" name="Years" parent="menu_academic_year_form" action="action_academic_year_form" />
+    <menuitem id="menu_academic_period_form" name="Periods" parent="menu_academic_year_form" action="action_academic_period_form" />
+    <!-- MenuItem For Configurations->Standards -->
+    <menuitem id="menu_school_standard_form" name="Grades &amp; Groups " parent="menu_configuration" />
+    <menuitem id="menu_garde_form" name="Grades" parent="menu_school_standard_form" action="action_grade_form" />
+    <menuitem id="menu_group_form" name="Groups" parent="menu_school_standard_form" action="action_group_form" />
+
+</odoo>

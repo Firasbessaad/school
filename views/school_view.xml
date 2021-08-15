@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!-- From View Of Academic Year's Information -->
+    <record id="view_academic_year_form" model="ir.ui.view">
+        <field name="name">acdemic.year.form</field>
+        <field name="model">sc.academic.year</field>
+        <field name="arch" type="xml">
+            <form string="Academic Years">
+                <header>
+                </header>
+                <sheet>
+                    <group col="4" colspan="4">
+                        <field name="name" placeholder="Name" />
+                        <field name="code" placeholder="Code" />
+                        <field name="date_start" placeholder="Start Date" />
+                         <field name="date_stop" placeholder="Stop Date" />
+                        <field name="sequence" />
+                        <field name="current"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Period">
+                            <field name="period_ids" nolabel="1" colspan="4" 
+                                    options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}">
+                                <tree string="Periods">
+                                    <field name="name" />
+                                    <field name="code" />
+                                    <field name="date_start" />
+                                    <field name="date_stop" />
+                                </tree>
+                                <form string="Periods">
+                                    <group col="4" colspan="4">
+                                        <field name="name" placeholder="Name" />
+                                        <field name="code" placeholder="Code" />
+                                        <field name="date_start" placeholder="Start Date" />
+                                        <field name="date_stop" placeholder="Stop Date" />
+                                        <field name="description" colspan="4" placeholder="Description"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                    <newline />
+                    <separator string="Description" colspan="4" />
+                    <field name="description" colspan="4" placeholder="Description"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View Of Academic Year's Information -->
+    <record id="view_academic_year_tree" model="ir.ui.view">
+        <field name="name">academic.year.tree</field>
+        <field name="model">sc.academic.year</field>
+        <field name="arch" type="xml">
+            <tree string="Academic Years">
+                <field name="sequence" />
+                <field name="name" />
+                <field name="code" />
+                <field name="date_start" />
+                <field name="date_stop" />
+            </tree>
+        </field>
+    </record>
+    <!-- From View Of academic Period's Information -->
+    <record id="view_academic_period_form" model="ir.ui.view">
+        <field name="name">sc.academic.period.form</field>
+        <field name="model">sc.academic.period</field>
+        <field name="arch" type="xml">
+            <form string="Periods">
+                <sheet>
+                    <group col="4" colspan="4">
+                        <field name="name" placeholder="Name" />
+                        <field name="code" placeholder="Code" />
+                        <field name="date_start" placeholder="Start Date" />
+                        <field name="date_stop" placeholder="Stop Date" />
+                        <field name="year_id" colspan="4" placeholder="Year" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"/>
+                        <field name="description" colspan="4" placeholder="Description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View Of academic Period's Information -->
+    <record id="view_academic_period_tree" model="ir.ui.view">
+        <field name="name">sc.academic.period.tree</field>
+        <field name="model">sc.academic.period</field>
+        <field name="arch" type="xml">
+            <tree string="Periods">
+                <field name="name" />
+                <field name="code" />
+                <field name="date_start" />
+                <field name="date_stop" />
+                <field name="year_id" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- From View Of Grade Information -->
+    <record id="view_grade_form" model="ir.ui.view">
+        <field name="name">sc.grade.form</field>
+        <field name="model">sc.grade</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <sheet>
+                    <group col="4" colspan="4">
+                        <field name="sequence" />
+                        <field name="name" placeholder="Name" />
+                        <field name="code" placeholder="Code" />
+                        <newline />
+                        <field name="description" colspan="4" placeholder="Description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View Of Grade Information -->
+    <record id="view_grade_tree" model="ir.ui.view">
+        <field name="name">sc.grade.tree</field>
+        <field name="model">sc.grade</field>
+        <field name="arch" type="xml">
+            <tree string="Grade">
+                <field name="sequence" />
+                <field name="name" />
+                <field name="code" />
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- From View Of Group Information -->
+    <record id="view_group_form" model="ir.ui.view">
+        <field name="name">sc.group.form</field>
+        <field name="model">sc.group</field>
+        <field name="arch" type="xml">
+            <form string="Group">
+                <sheet>
+                    <group col="4" colspan="4">
+                        <field name="sequence" />
+                        <field name="name" placeholder="Name" />
+                        <field name="code" placeholder="Code" />
+                        <field name="grade_id" options="{'no_create': True, 'no_open': True, 'no_create_edit': True}"/>
+                        <newline />
+                        <field name="description" colspan="4" placeholder="Description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View Of Group Information -->
+    <record id="view_group_tree" model="ir.ui.view">
+        <field name="name">sc.group.tree</field>
+        <field name="model">sc.group</field>
+        <field name="arch" type="xml">
+            <tree string="Group">
+                <field name="sequence" />
+                <field name="name" />
+                <field name="code" />
+                <field name="grade_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_academic_year_form" model="ir.actions.act_window">
+        <field name="name">Academic Years</field>
+        <field name="res_model">sc.academic.year</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Action Of Form & Tree Views Of Academic period Information -->
+    <record id="action_academic_period_form" model="ir.actions.act_window">
+        <field name="name">Periods</field>
+        <field name="res_model">sc.academic.period</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Action Of Form & Tree Views Of Grade Information -->
+    <record id="action_garde_form" model="ir.actions.act_window">
+        <field name="name">Grade</field>
+        <field name="res_model">sc.grade</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Action Of Form & Tree Views Of Group Information Action -->
+    <record id="action_group_form" model="ir.actions.act_window">
+        <field name="name">Groups</field>
+        <field name="res_model">sc.group</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    </data>
+</odoo>
