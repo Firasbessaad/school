@@ -9,7 +9,7 @@
     'Summary': 'A Module For School Management',
     'images': ['static/description/icon.jpg'],
     'depends': ['base'],
-    'data': ['security/school_security.xml',
+    'data': ['security/security.xml',
              'security/ir.model.access.csv',
              
              #'views/student_view.xml',
