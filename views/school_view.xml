@@ -95,7 +95,7 @@
     </record>
 
     <!-- From View Of Grade Information -->
-    <record id="view_grade_form" model="ir.ui.view">
+    <!---<record id="view_grade_form" model="ir.ui.view">
         <field name="name">sc.grade.form</field>
         <field name="model">sc.grade</field>
         <field name="arch" type="xml">
@@ -110,7 +110,7 @@
                 </sheet>
             </form>
         </field>
-    </record>
+    </record>-->
     <!-- Tree View Of Grade Information -->
     <record id="view_grade_tree" model="ir.ui.view">
         <field name="name">sc.grade.tree</field>
