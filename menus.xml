@@ -5,7 +5,7 @@
     <menuitem id="menu_root_school" name="School Managment" web_icon="school,static/description/icon.png" sequence="1"/>
     <!-- Menu Item Of Students & Parents -->
     <menuitem id="menu_students_parents" name="Students &amp; Parents" parent="menu_root_school" sequence="0"/>
-    <menuitem id="menu_student_profile" name="Students" parent="menu_students_parents" action="action_studens" 
+    <menuitem id="menu_student_profile" name="Students" parent="menu_students_parents" action="action_students" 
         sequence="0"/>
     <menuitem id="menu_parent_profile" name="Parents" parent="menu_students_parents" action="action_parents" 
         sequence="1"/>

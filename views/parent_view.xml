@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <odoo>
+    <data>
         <record id="parent_inherit_res_parnter" model="ir.ui.view">
             <field name="name">parent.view.form.inherit</field>
             <field name="model">res.partner</field>
@@ -18,12 +19,7 @@
         </record>
         <!-- Action View Of school parent-->
 
-        <record id="" model="ir.actions.act_window">
-            <field name="name">Parent Profile</field>
-            <field name="res_model">school.parent</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-        <record id="action_school_parent_form" model="ir.actions.act_window">
+        <record id="action_parents" model="ir.actions.act_window">
             <field name="name">Parents</field>
             <field name="res_model">res.partner</field>
             <field name="view_mode">tree,form</field>
@@ -35,4 +31,5 @@
                 
             </field>
         </record>
+    </data>
 </odoo>
