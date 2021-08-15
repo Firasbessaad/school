@@ -1,0 +1,373 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-15 14:34+0000\n"
+"PO-Revision-Date: 2021-08-15 14:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school
+#: model:ir.model,name:school.model_sc_academic_period
+msgid "Academic Period"
+msgstr "Période académique"
+
+#. module: school
+#: model:ir.model,name:school.model_sc_academic_year
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__year_id
+msgid "Academic Year"
+msgstr "Année scolaire"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_academic_year_form
+#: model:ir.ui.menu,name:school.menu_academic_year_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_tree
+msgid "Academic Years"
+msgstr "Années scolaires"
+
+#. module: school
+#: model:ir.model.constraint,message:school.constraint_sc_academic_period_period_unique
+msgid "Academic period should be unique!"
+msgstr "Année scolaire devra etre unique!"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__code
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__code
+#: model:ir.model.fields,field_description:school.field_sc_grade__code
+#: model:ir.model.fields,field_description:school.field_sc_group__code
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+#: model_terms:ir.ui.view,arch_db:school.view_grade_form
+#: model_terms:ir.ui.view,arch_db:school.view_group_form
+msgid "Code"
+msgstr "Code"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__code
+msgid "Code of academic period"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__code
+msgid "Code of academic year"
+msgstr ""
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_configuration
+msgid "Configurations"
+msgstr ""
+
+#. module: school
+#: model:ir.model,name:school.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__create_uid
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__create_uid
+#: model:ir.model.fields,field_description:school.field_sc_grade__create_uid
+#: model:ir.model.fields,field_description:school.field_sc_group__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__create_date
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__create_date
+#: model:ir.model.fields,field_description:school.field_sc_grade__create_date
+#: model:ir.model.fields,field_description:school.field_sc_group__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__current
+msgid "Current"
+msgstr "Actuelle"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__description
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__description
+#: model:ir.model.fields,field_description:school.field_sc_grade__description
+#: model:ir.model.fields,field_description:school.field_sc_group__description
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+#: model_terms:ir.ui.view,arch_db:school.view_grade_form
+#: model_terms:ir.ui.view,arch_db:school.view_group_form
+msgid "Description"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_res_partner__display_name
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__display_name
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__display_name
+#: model:ir.model.fields,field_description:school.field_sc_grade__display_name
+#: model:ir.model.fields,field_description:school.field_sc_group__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__date_stop
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__date_stop
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__date_stop
+msgid "Ending of academic period"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__date_stop
+msgid "Ending of academic year"
+msgstr ""
+
+#. module: school
+#: code:addons/school/models/sc_academic_year.py:0
+#, python-format
+msgid ""
+"Error! The duration of the academic year\n"
+"                                      is invalid."
+msgstr ""
+
+#. module: school
+#: code:addons/school/models/sc_academic_year.py:0
+#, python-format
+msgid ""
+"Error! You cannot define overlapping\n"
+"                                          academic years."
+msgstr ""
+
+#. module: school
+#: code:addons/school/models/sc_academic_year.py:0
+#, python-format
+msgid "Error! You cannot set two current year active!"
+msgstr ""
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_grade_form
+#: model:ir.model,name:school.model_sc_grade
+#: model:ir.model.fields,field_description:school.field_res_partner__grade_id
+#: model:ir.model.fields,field_description:school.field_res_partner__group_id
+#: model:ir.model.fields,field_description:school.field_res_users__grade_id
+#: model:ir.model.fields,field_description:school.field_res_users__group_id
+#: model:ir.model.fields,field_description:school.field_sc_group__grade_id
+#: model_terms:ir.ui.view,arch_db:school.view_grade_form
+#: model_terms:ir.ui.view,arch_db:school.view_grade_tree
+msgid "Grade"
+msgstr "Niveau"
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_grade_form
+msgid "Grades"
+msgstr "Niveaux"
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_school_standard_form
+msgid "Grades & Groups "
+msgstr "Niveaux & Classes"
+
+#. module: school
+#: model:ir.model,name:school.model_sc_group
+#: model_terms:ir.ui.view,arch_db:school.view_group_form
+#: model_terms:ir.ui.view,arch_db:school.view_group_tree
+msgid "Group"
+msgstr "Classe"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_group_form
+#: model:ir.ui.menu,name:school.menu_group_form
+msgid "Groups"
+msgstr "Classes"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_res_partner__id
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__id
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__id
+#: model:ir.model.fields,field_description:school.field_sc_grade__id
+#: model:ir.model.fields,field_description:school.field_sc_group__id
+msgid "ID"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_res_partner____last_update
+#: model:ir.model.fields,field_description:school.field_sc_academic_period____last_update
+#: model:ir.model.fields,field_description:school.field_sc_academic_year____last_update
+#: model:ir.model.fields,field_description:school.field_sc_grade____last_update
+#: model:ir.model.fields,field_description:school.field_sc_group____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__write_uid
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__write_uid
+#: model:ir.model.fields,field_description:school.field_sc_grade__write_uid
+#: model:ir.model.fields,field_description:school.field_sc_group__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__write_date
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__write_date
+#: model:ir.model.fields,field_description:school.field_sc_grade__write_date
+#: model:ir.model.fields,field_description:school.field_sc_group__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__name
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__name
+#: model:ir.model.fields,field_description:school.field_sc_grade__name
+#: model:ir.model.fields,field_description:school.field_sc_group__name
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+#: model_terms:ir.ui.view,arch_db:school.view_grade_form
+#: model_terms:ir.ui.view,arch_db:school.view_group_form
+msgid "Name"
+msgstr "Nom"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__name
+msgid "Name of academic period"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__name
+msgid "Name of academic year"
+msgstr ""
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_parents
+#: model:ir.ui.menu,name:school.menu_parent_profile
+msgid "Parents"
+msgstr ""
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+msgid "Period"
+msgstr "Période"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_academic_period_form
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__period_ids
+#: model:ir.ui.menu,name:school.menu_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_tree
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+msgid "Periods"
+msgstr "Périodes"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__year_id
+msgid "Related academic year "
+msgstr ""
+
+#. module: school
+#: model:res.groups,name:school.group_school_administration
+msgid "School Administrator"
+msgstr ""
+
+#. module: school
+#: model:ir.module.category,name:school.module_category_school
+msgid "School Management"
+msgstr "Gestion de l'école"
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_root_school
+msgid "School Managment"
+msgstr "Gestion de l'école"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__sequence
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__sequence
+#: model:ir.model.fields,field_description:school.field_sc_grade__sequence
+#: model:ir.model.fields,field_description:school.field_sc_group__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__sequence
+msgid "Sequence order you want to see this period."
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__sequence
+msgid "Sequence order you want to see this year."
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__current
+msgid "Set Active Current Year"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_sc_academic_period__date_start
+#: model:ir.model.fields,field_description:school.field_sc_academic_year__date_start
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_period__date_start
+msgid "Starting date of academic period"
+msgstr ""
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__date_start
+msgid "Starting date of academic year"
+msgstr ""
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.view_academic_period_form
+#: model_terms:ir.ui.view,arch_db:school.view_academic_year_form
+msgid "Stop Date"
+msgstr "Date de fin"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_students
+#: model:ir.ui.menu,name:school.menu_student_profile
+msgid "Students"
+msgstr "Élèves"
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_students_parents
+msgid "Students & Parents"
+msgstr "Élèves & Parents"
+
+#. module: school
+#: code:addons/school/models/sc_academic_year.py:0
+#, python-format
+msgid ""
+"The start date of the academic year'\n"
+"                                      should be less than end date."
+msgstr ""
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_academic_year_sub_form
+msgid "Years"
+msgstr "Années"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_res_partner__is_parent
+#: model:ir.model.fields,field_description:school.field_res_users__is_parent
+msgid "is Parent"
+msgstr "Est un parent"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_res_partner__is_student
+#: model:ir.model.fields,field_description:school.field_res_users__is_student
+msgid "is student"
+msgstr "Est un élèves"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_sc_academic_year__period_ids
+msgid "related Academic periods"
+msgstr ""
