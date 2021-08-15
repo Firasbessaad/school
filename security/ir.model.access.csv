@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_academic_year_admin,academic.year,model_sc_academic_year,group_school_administration,1,1,1,1
 access_academic_period_admin,academic.period,model_sc_academic_period,group_school_administration,1,1,1,1
-access_sc_garde_admin,sc.grade,model_sc_grade,group_school_administration,1,1,1,1
+access_sc_grade_admin,sc.grade,model_sc_grade,group_school_administration,1,1,1,1
 access_sc_group_admin,sc.group,model_sc_group,group_school_administration,1,1,1,1

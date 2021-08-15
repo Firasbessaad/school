@@ -17,7 +17,7 @@
     <menuitem id="menu_academic_period_form" name="Periods" parent="menu_academic_year_form" action="action_academic_period_form" />
     <!-- MenuItem For Configurations->Standards -->
     <menuitem id="menu_school_standard_form" name="Grades &amp; Groups " parent="menu_configuration" />
-    <menuitem id="menu_garde_form" name="Grades" parent="menu_school_standard_form" action="action_grade_form" />
+    <menuitem id="menu_grade_form" name="Grades" parent="menu_school_standard_form" action="action_grade_form" />
     <menuitem id="menu_group_form" name="Groups" parent="menu_school_standard_form" action="action_group_form" />
 
 </odoo>

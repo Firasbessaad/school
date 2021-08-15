@@ -6,8 +6,8 @@ from odoo.osv import expression
 class Grade(models.Model):
     ''' Defining a Grade'''
 
-    _name = "sc.garde"
-    _description = "Garde"
+    _name = "sc.grade"
+    _description = "Grade"
     _order = "sequence"
 
     sequence = fields.Integer('Sequence', required=True)
