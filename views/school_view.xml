@@ -40,7 +40,6 @@
                             </field>
                         </page>
                     </notebook>
-                    <newline />
                     <separator string="Description" colspan="4" />
                     <field name="description" colspan="4" placeholder="Description"/>
                 </sheet>
@@ -106,7 +105,6 @@
                         <field name="sequence" />
                         <field name="name" placeholder="Name" />
                         <field name="code" placeholder="Code" />
-                        <newline />
                         <field name="description" colspan="4" placeholder="Description"/>
                     </group>
                 </sheet>
@@ -139,7 +137,6 @@
                         <field name="name" placeholder="Name" />
                         <field name="code" placeholder="Code" />
                         <field name="grade_id" options="{'no_create': True, 'no_open': True, 'no_create_edit': True}"/>
-                        <newline />
                         <field name="description" colspan="4" placeholder="Description"/>
                     </group>
                 </sheet>
